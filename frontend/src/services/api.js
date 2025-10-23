@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = 'https://smart-study-planner-project-backend.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE,
