@@ -10,7 +10,10 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://smart-study-planner-project-frontend.onrender.com',  // Render frontend URL
+  credentials: true,
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
